@@ -302,7 +302,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
   /* line 280, sass/libs/_components.scss */
   .timeline .milestone:before { left: -15px; right: auto; top: 0; bottom: 0; margin: 0; } }
 /* line 289, sass/libs/_components.scss */
-.timeline .milestone .year { color: #ffffff; font-family: "Playfair Display", serif; font-size: 24px; font-size: 1.5em; margin-bottom: 20px; }
+.timeline .milestone .year { color: #021730; font-family: "Playfair Display", serif; font-size: 24px; font-size: 1.5em; margin-bottom: 20px; }
 /* line 295, sass/libs/_components.scss */
 .timeline .milestone .milestone-title { color: white; font-family: "Playfair Display", serif; font-size: 14px; font-size: 0.875em; }
 
