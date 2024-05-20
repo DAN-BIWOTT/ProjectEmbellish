@@ -34,10 +34,10 @@
 			<header class="site-header">
 				<div class="container">
 					<a href="index.html" id="branding">
-						<!-- <img src="images/emb.jpg" style="height: auto; width: 15%;" alt="Company Name" class="logo"> -->
+						<img src="images/emb.jpg" style="height: auto; width: 10%;" alt="Company Name" class="logo">
 						<div class="branding-copy">
 							<h1 class="site-title">EMBELLISH</h1>
-							<small class="site-description">AND EMBLAZON</small>
+							<small class="site-description">The Lawyers of the Future</small>
 						</div>
 					</a>
 
@@ -65,8 +65,15 @@
 							<div class="col-md-4">
 								<div class="hero-content">
 									<h1 class="hero-title">Who we are </h1>
-									<p>Embellish is a Network of engaged young professionals in the legal sector who are passionate about legal practice and the interplay between legal skills and social change in sectors such as education, politics, culture, and personal development. These professionals strive for...</p>
-										<a href="./about.html" class="button">Read more</a>
+									<p>Embellish is a group of young lawyers -and other professionals- who are prepared to take the bull by its horns and champion progressive thinking, exchange of ideas and networking in all forms. What makes us different is that we do not just stop at ideas, but aim at taking action</p>
+									<p id="WhoWeAre" style="display: none;">
+										Our core goal is to effect social change using both conventional and unconventional routes availed to us by our training and interests. 
+										
+										Our activities include quarterly Roundtable meetups, an annual gala dinner, as well as various short-term community impact projects throughout the year. 
+										
+										Part of our output is a quarterly publication on emerging areas of law and other pertinent issues as well as a Podcast capturing current affairs, governance, and other areas of interest.
+									</p>	
+									<a href="#" onclick="readMore(0)" id="WhoWeAre-read-more" class="button">Read more</a>
 								</div>
 							</div>
 						</div>
@@ -78,8 +85,10 @@
 						<div class="row">
 							<div class="col-md-8">
 								<h2 style="color: #f6f6f7;">WHO WE ARE LOOKING FOR</h2>
-								<p style="color: white;">Embellish is young at heart, and we need engaged, curious minds of all ages. Would you like to build a network, meet mentors and exchange ideas in meaningful ways? You are who we are looking for. 
+								<p style="color: white;">We are open to all professionals with a keen interest in impacting the society beyond their day-to-day role. We particularly welcome young professionals keen on meeting other like-minded individuals and sharing ideas.  
 								</p>
+								<h2 style="color: #f6f6f7;">How to Join</h2>
+								<p style="color: white;">Embellish exists entirely online. We have a WhatsApp channel, as well as social media handles including X, Instagram, LinkedIn and TikTok. You may join our mailing list for updates on what members of the community are up to, our activities, opportunities and more. </p>
 							</div>
 							<div class="col-md-4">
 								<div class="latest-news">
@@ -168,7 +177,7 @@
 
 					<div class="mySlides fade">
 					  <div class="numbertext">1 / 7</div>
-					  <img src="images/gallery/image0.png" id="slide-img">
+					  <img src="images/gallery/image0.png" id="slide-img" style="max-height: 40em;padding-left: 20%;">
 					  <!-- <div class="text">Caption Text</div> -->
 					</div>
 					
@@ -180,19 +189,19 @@
 					
 					<div class="mySlides fade">
 					  <div class="numbertext">3 / 7</div>
-					  <img src="images/gallery/image2.jpeg" id="slide-img">
+					  <img src="images/gallery/image2.jpeg" id="slide-img" style="max-height: 40em;padding-left: 20%;">
 					  <!-- <div class="text">Caption Three</div> -->
 					</div>
 					
 					<div class="mySlides fade">
 						<div class="numbertext">4 / 7</div>
-						<img src="images/gallery/image3.jpeg" id="slide-img">
+						<img src="images/gallery/image3.jpeg" id="slide-img" style="max-height: 40em;padding-left: 20%;">
 						<!-- <div class="text">Caption Three</div> -->
 					  </div>
 
 					  <div class="mySlides fade">
 						<div class="numbertext">5 / 7</div>
-						<img src="images/gallery/image4.png" id="slide-img">
+						<img src="images/gallery/image4.png" id="slide-img" style="max-height: 40em;padding-left: 10%;">
 						<!-- <div class="text">Caption Three</div> -->
 					  </div>
 
@@ -204,7 +213,7 @@
 
 					  <div class="mySlides fade">
 						<div class="numbertext">7 / 7</div>
-						<img src="images/gallery/image6.jpeg" id="slide-img">
+						<img src="images/gallery/image6.jpeg" id="slide-img" style="max-height: 40em;padding-left: 20%;">
 						<!-- <div class="text">Caption Three</div> -->
 					  </div>
 
@@ -265,6 +274,11 @@
 		<script src="js/app.js"></script>
 		<script>
 			function readMore($number){
+				
+				if($number == 0){
+					document.getElementById("WhoWeAre").style.display = "block";
+					document.getElementById("WhoWeAre-read-more").style.display = "none";
+				}
 				if($number == 1){
 					document.getElementById("newsletter").style.display = "block";
 					document.getElementById("newsletter-read-more").style.display = "none";
