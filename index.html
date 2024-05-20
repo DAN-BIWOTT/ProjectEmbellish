@@ -140,7 +140,7 @@
 									</header>
 									<p>Perhaps the most vibrant of the Projects, the Podcast is a place where we tell our stories, share our insights and add our voices to current affairs. 
 									</p>
-									<a href="#" class="more-link">Read More</a>
+									<!-- <a href="#" class="more-link">Read More</a> -->
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -274,12 +274,16 @@
 		<script src="js/app.js"></script>
 		<script>
 			function readMore($number){
-				
+				event.preventDefault();
 				if($number == 0){
 					document.getElementById("WhoWeAre").style.display = "block";
 					document.getElementById("WhoWeAre-read-more").style.display = "none";
 				}
 				if($number == 1){
+					document.getElementById("newsletter").style.display = "block";
+					document.getElementById("newsletter-read-more").style.display = "none";
+				}
+				if($number == 2){
 					document.getElementById("newsletter").style.display = "block";
 					document.getElementById("newsletter-read-more").style.display = "none";
 				}
