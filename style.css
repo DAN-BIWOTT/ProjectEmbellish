@@ -1,9 +1,3 @@
-/*!
- * Project_Name: Themezy Lawyers Template
- * Author: Themezy
- * Email: info@themezy.com
- * URL: http://themezy.com
- */
 /* line 45, sass/libs/_normalize.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
 
@@ -33,22 +27,22 @@ a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
 /* line 159, sass/libs/_normalize.scss */
-h1 {  font-family: "Playfair Display", serif; font-size: 2em; margin: 0.67em 0; }
+h1 {  font-family: "Brice Regular SemiExpanded"; font-size: 2em; margin: 0.67em 0; }
 
 /* line 164, sass/libs/_normalize.scss */
-h2 {  font-family: "Playfair Display", serif; font-size: 1.5em; margin: 0.83em 0; }
+h2 {  font-family: "Brice Regular SemiExpanded"; font-size: 1.5em; margin: 0.83em 0; }
 
 /* line 169, sass/libs/_normalize.scss */
-h3 {  font-family: "Playfair Display", serif; font-size: 1.17em; margin: 1em 0; }
+h3 {  font-family: "Brice Regular SemiExpanded"; font-size: 1.17em; margin: 1em 0; }
 
 /* line 174, sass/libs/_normalize.scss */
-h4 {  font-family: "Playfair Display", serif; font-size: 1em; margin: 1.33em 0; }
+h4 {  font-family: "Brice Regular SemiExpanded"; font-size: 1em; margin: 1.33em 0; }
 
 /* line 179, sass/libs/_normalize.scss */
-h5 {  font-family: "Playfair Display", serif; font-size: 0.83em; margin: 1.67em 0; }
+h5 {  font-family: "Brice Regular SemiExpanded"; font-size: 0.83em; margin: 1.67em 0; }
 
 /* line 184, sass/libs/_normalize.scss */
-h6 {  font-family: "Playfair Display", serif; font-size: 0.75em; margin: 2.33em 0; }
+h6 {  font-family: "Brice Regular SemiExpanded"; font-size: 0.75em; margin: 2.33em 0; }
 
 /* line 192, sass/libs/_normalize.scss */
 abbr[title] { border-bottom: 1px dotted; }
@@ -75,7 +69,7 @@ q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 q:before, q:after { content: ''; content: none; }
 
 /* line 277, sass/libs/_normalize.scss */
-small { font-size: 80%; }
+small { font-size: 80%; font-family: "Brice Regular SemiExpanded"; }
 
 /* line 284, sass/libs/_normalize.scss */
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
@@ -142,7 +136,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 body { font-family: Arial, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.5; color: #888; background-color: #f6f6f7; }
 
 /* line 17, sass/libs/_global.scss */
-h1, h2, h3, h4, h5, h6 { margin-top: 0; color: #021730; font-family: "Playfair Display", serif; font-weight: 600; text-transform: uppercase; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; color: #021730; font-family: "Brice Regular SemiExpanded"; font-weight: 600; text-transform: uppercase; }
 
 /* line 25, sass/libs/_global.scss */
 a { text-decoration: none; }
@@ -209,18 +203,27 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* line 82, sass/libs/_components.scss */
 .feature header .feature-icon, .feature header .feature-title-copy { display: inline-block; vertical-align: top; width: 15em; padding-top: 10px;}
 .latest-articles {
-  font-family: "Playfair Display", serif;
+  font-family: "Brice Regular SemiExpanded";
   font-size: .75em;
   color: red;
 }
 /* line 86, sass/libs/_components.scss */
-.feature header .feature-icon { margin-right: 20px; }
+.feature header .feature-icon { margin-right: 20px; border-radius: 10%; }
 @media screen and (max-width: 990px) {
   .feature header .feature-icon { margin-left: 10%; }
   .feature header .feature-icon, .feature header .feature-title-copy { display: inline-block; vertical-align: top; width: 15em; padding-top: 10px; margin-left:10%;}
 }
 /* line 88, sass/libs/_components.scss */
-.feature header .feature-title { font-size: 24px; font-size: 1.5em; color: #021730; margin-bottom: 0; line-height: 1; }
+.feature header .feature-title { font-size: 24px; font-size: 1em; padding-left: 15%; color: #021730; margin-bottom: 0; line-height: 1; }
+@media screen and (max-width: 990px) { 
+.feature header .feature-title { font-size: 18px; font-size: 1em; color: #021730; margin-bottom: 0; }
+}
+.article-pdfs{
+  text-decoration: underline;
+  font-family: "Brice Regular SemiExpanded";
+  font-size: 1em;
+  color: #021730;
+}
 /* line 94, sass/libs/_components.scss */
 .feature header .feature-subtitle { font-size: 12px; font-size: 0.75em; color: #888; text-transform: uppercase; }
 /* line 101, sass/libs/_components.scss */
@@ -230,16 +233,17 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* line 112, sass/libs/_components.scss */
 .feature-grid .feature .feature-image { margin-bottom: 20px; }
 /* line 113, sass/libs/_components.scss */
-.feature-grid .feature .feature-title { font-size: 36px; font-size: 2.25em; margin-bottom: 10px; color: white; text-transform: uppercase; }
+.feature-grid .feature .feature-title { font-size: 15px; font-size: 1em; margin-bottom: 10px; color: white; text-transform: uppercase; }
 /* line 119, sass/libs/_components.scss */
 .feature-grid .feature p { margin-bottom: 0; }
 /* line 122, sass/libs/_components.scss */
-.feature.boxed { padding: 30px; background-color: #111113; margin-bottom: 30px; }
+.feature.boxed { padding: 30px; background-color: #f6f6f7; margin-bottom: 30px; }
 /* line 127, sass/libs/_components.scss */
 .feature.boxed p { margin-bottom: 0; }
 
 /* line 131, sass/libs/_components.scss */
 .quote-section { margin: 30px 0; padding: 50px 100px; border: 3px solid #28292c; }
+.quote-section, a{ text-decoration: underline; color: red; }
 @media screen and (max-width: 640px) { /* line 131, sass/libs/_components.scss */
   .quote-section { padding: 30px; } }
 
@@ -260,7 +264,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* line 171, sass/libs/_components.scss */
 .quote-slider .slides p { font-size: 18px; font-size: 1.125em; line-height: 1.6; }
 /* line 175, sass/libs/_components.scss */
-.quote-slider .slides cite, .quote-slider .slides span { font-size: 12px; font-size: 0.75em; font-weight: 500; }
+.quote-slider .slides cite, .quote-slider .slides span { font-size: 18px; font-size: 1.5em; font-weight: 500; }
 /* line 179, sass/libs/_components.scss */
 .quote-slider .slides cite { font-style: normal; text-transform: uppercase; font-family: "Playfair Display", serif; }
 /* line 184, sass/libs/_components.scss */
@@ -1002,7 +1006,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
   }
 }
 /* line 23, sass/layout/_header.scss */
-#branding .site-title { margin: 0; color: white; font-size: 14px; font-size: 2.5em; font-weight: 600; text-transform: uppercase; line-height: 1; font-family: "Playfair Display", serif; }
+#branding .site-title { margin: 0; color: white; font-size: 14px; font-size: 2.5em; font-weight: 600; text-transform: uppercase; line-height: 1; font-family: "Brice Regular SemiExpanded"; }
 /* line 30, sass/layout/_header.scss */
 #branding .site-title a { color: white; }
 /* line 32, sass/layout/_header.scss */
@@ -1022,7 +1026,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* line 58, sass/layout/_header.scss */
 .mobile-navigation .menu { list-style: none; padding-left: 0; margin: 0; }
 /* line 64, sass/layout/_header.scss */
-.mobile-navigation .menu a { color: #ff0707; padding: 10px 20px; display: block; font-family: "Playfair Display", serif; border-left: 4px solid transparent; -webkit-transition: .3s ease; transition: .3s ease; text-transform: uppercase; font-weight: 600; font-size: 18px; font-size: 1em; }
+.mobile-navigation .menu a { text-decoration: none !important; color: #ff0707; padding: 10px 20px; display: block; font-family: "Brice Regular SemiExpanded"; border-left: 4px solid transparent; -webkit-transition: .3s ease; transition: .3s ease; text-transform: uppercase; font-weight: 600; font-size: 18px; font-size: 1em; }
 /* line 75, sass/layout/_header.scss */
 .mobile-navigation .menu .current-menu-item a, .mobile-navigation .menu .menu-item:hover a { color: #ffffff; border-left: 4px solid #ffffff; font-size: x-large;}
 
@@ -1037,7 +1041,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* line 93, sass/layout/_header.scss */
 .main-navigation .menu-item { display: inline-block; padding: 0 10px; }
 /* line 97, sass/layout/_header.scss */
-.main-navigation .menu-item a { padding: 10px 0; border-bottom: 3px solid transparent; color: #ff0707; font-family: "Playfair Display", serif; font-size: 12px; font-size: 1em; text-transform: uppercase; font-weight: 600; -webkit-transition: .3s ease; transition: .3s ease; }
+.main-navigation .menu-item a { text-decoration: none !important; padding: 10px 0; border-bottom: 3px solid transparent; color: #ff0707;font-family: "Brice Regular SemiExpanded"; font-size: 12px; font-size: 1em; text-transform: uppercase; font-weight: 600; -webkit-transition: .3s ease; transition: .3s ease; }
 /* line 109, sass/layout/_header.scss */
 .main-navigation .menu-item.current-menu-item a, .main-navigation .menu-item:hover a { border-bottom: 3px solid #ffffff; }
 
@@ -1069,7 +1073,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 @media screen and (max-width: 990px) { /* line 39, sass/layout/_content.scss */
   .hero .hero-content { margin-top: 0; padding: 50px 0; } }
 /* line 47, sass/layout/_content.scss */
-.hero .hero-title { text-transform: uppercase; font-weight: 600; font-size: 36px; font-size: 2.25em; color: #000;}
+.hero .hero-title { text-transform: uppercase; font-family: "Brice Regular SemiExpanded"; font-weight: 600; font-size: 36px; font-size: 2.25em; color: #000;}
 /* line 52, sass/layout/_content.scss */
 .hero p { font-size: 16px; font-size: 1em; line-height: 1.5; margin-bottom: 30px; }
 
@@ -1118,9 +1122,9 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 /* home gallery */
 .mySlides {display: none; margin-left: 10%;}
 #slide-img {vertical-align: middle; max-width: 50em; max-height: 20%;}
-@media only screen and (max-width: 300px) {
+@media screen and (max-width: 990px) {
   .mySlides {display: none; margin-left: 0%;}
-  #slide-img {vertical-align: middle; max-width: 10em; height: auto;}
+  #slide-img {vertical-align: middle !important; max-width: 15em !important; height: auto;}
 }
 /* Slideshow container */
 .slideshow-container {
@@ -1211,11 +1215,21 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 .sticky-icon  {
 	z-index:1;
 	position:fixed;
-	top:15%;
+	top:30%;
 	right:0%;
 	width:220px;
 	display:flex;
-	flex-direction:column;}  
+	flex-direction:column;}
+  @media screen and (max-width: 990px) {
+    .sticky-icon  {
+      z-index:1;
+      position:fixed;
+      top:45%;
+      right: 0%;
+      width:220px;
+      display:flex;
+      flex-direction:column;}
+   }
 .sticky-icon a  {
 	transform:translate(160px,0px);
 	border-radius:50px 0px 0px 50px;
@@ -1227,6 +1241,19 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 	font-size:22px;
 	font-family:'Oswald', sans-serif;
 	transition:all 0.8s;}
+  @media screen and (max-width: 990px) {
+    .sticky-icon a  {
+      transform:translate(160px,0px);
+      border-radius:50px 0px 0px 50px;
+      text-align:left;
+      margin:.25em;
+      text-decoration:none;
+      text-transform:uppercase;
+      padding:5px;
+      font-size:22px;
+      font-family:'Oswald', sans-serif;
+      transition:all 0.8s;}
+  }
 .sticky-icon a:hover  {
 	color:#FFF;
 	transform:translate(0px,0px);}	
@@ -1312,9 +1339,7 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 blockquote,footer,cite{
   color: #ff0000;
 }
-blockquote,p{
-  color: #ff0000;
-}
+
 .contributors{
   max-width: 320px;
 }
@@ -1322,5 +1347,16 @@ blockquote,p{
   .contributors{
     max-width: 220px;
   } 
+}
+
+#gallery{
+color: #f6f6f7; 
+margin-left: 50%;
+}
+@media screen and (max-width: 990px) { 
+  #gallery{
+    color: #f6f6f7; 
+    margin-left: 25%;
+    } 
 }
 /*# sourceMappingURL=style.css.map */

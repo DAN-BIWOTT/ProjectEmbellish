@@ -6,7 +6,8 @@
 		$(".quote-slider").flexslider({
 			controlNav: true,
 			directionNav: false,
-			animation: "fade"
+			animation: "fade",
+			slideshowSpeed: 300000,
 		});
 
 		$(".menu-toggle").click(function(){
