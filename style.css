@@ -224,10 +224,13 @@ form input[type="submit"]:hover, form input[type="submit"]:active, form input[ty
 .feature header .feature-title { font-size: 18px; font-size: 1em; color: #021730; margin-bottom: 0; }
 }
 .article-pdfs{
-  text-decoration: underline;
+  all: unset;
   font-family: "Brice Regular SemiExpanded";
   font-size: 1em;
   color: #021730;
+}
+:hover .article-pdfs{
+  cursor: pointer;
 }
 /* line 94, sass/libs/_components.scss */
 .feature header .feature-subtitle { font-size: 12px; font-size: 0.75em; color: #888; text-transform: uppercase; }
